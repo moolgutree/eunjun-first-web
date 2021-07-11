@@ -3,9 +3,47 @@
 <head>
   <title> 은준 학교 교과내용중 재활 이론 사이트 </title>
   <meta charset="utf-8">
+  <style>
+  body {
+    margin:0;
+  }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+  h1 {
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:10px;
+    font-size:45px;
+  }
+  ol {
+    border-right:1px solid gray;
+    width:53px;
+    margin:0;
+    padding:20px
+  }
+#grid{
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+#grid ol {
+  padding-left:33px;
+}
+#grid #article{
+  padding-left: 27px;
+}
+@media (max-width:580px) {
+  h1{
+    display: none;
+  }
+}
+  </style>
 </head>
 <body>
-  <h1><a href="index.html"> <img src="mgt2.jpg" width="15%">  은준이의 이론 </a></h1>
+  <a href="index.html" style="color:red;text-decoration:underline" class="saw"> <img src="mgt2.jpg" width="15%" > <h1> 재활 이론(사이트 제작자의) </a></h1>
+  <div id="grid">
     <ol>
       <li><a href="1.html"> 코로나 </a></li>
       <li><a href="2.html"> <img src="korean.png" width="3%"> 국어 </a></li>
@@ -17,16 +55,19 @@
   <li><a href="8.html"> <img src="english.png" width="3%"> 영어 </a></li>
       <li><a href="9.html"> <img src="pe.png" width="3%"> 체육 </a></li>
     </ol>
-<h2>은준이의 이론 </h2>
-<p>이 사이트는 코딩을 해보고 싶은 고등학생이 <strong>자신의 진로를 설명하고 싶어서</strong>
-처음으로 코딩을 해보는 것이라 <strong>여러 의미로 안 좋을 텐데</strong> 좋게 봐주시면 감사합니다.</p>
-<p> 만들게된 계기(영상) </p>
-  <p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YsaHNi1QKMA"
-    title="YouTube video player" frameborder=
-    "0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-    gyroscope; picture-in-picture" allowfullscreen></iframe> : <h6>어도비 에니메이트, 프리미어 프로</h6> </p>
-  <p>
-    <img src="사이트 최종본 gif.gif" width="40%"> <h6> 어도비 애니메이트 (gif) </h6> </p>
+  <div id="article">
+     <h2>은준이의 이론 </h2>
+     <p>이 사이트는 코딩을 해보고 싶은 고등학생이 <strong>자신의 진로를 설명하고 싶어서</strong>
+     처음으로 코딩을 해보는 것이라 <strong>여러 의미로 안 좋을 텐데</strong> 좋게 봐주시면 감사합니다.</p>
+     <p> 만들게된 계기(영상) </p>
+     <p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/YsaHNi1QKMA"
+       title="YouTube video player" frameborder=
+       "0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+       gyroscope; picture-in-picture" allowfullscreen></iframe> : <h6>어도비 에니메이트, 프리미어 프로</h6> </p>
+     <p>
+         <img src="사이트 최종본 gif.gif" width="40%"> <h6> 어도비 애니메이트 </h6>
+  </div>
+ </div>
 </body>
 </html>
