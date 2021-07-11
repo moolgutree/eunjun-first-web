@@ -3,9 +3,47 @@
 <head>
   <title> 은준 학교 교과내용중 재활 이론 사이트 - 체육 </title>
   <meta charset="utf-8">
+  <style>
+  body {
+    margin:0;
+  }
+   a {
+     color:black;
+     text-decoration: none;
+   }
+   h1 {
+     text-align: center;
+     border-bottom:1px solid gray;
+     margin:0;
+     padding:10px;
+     font-size:45px;
+   }
+   ol {
+     border-right:1px solid gray;
+     width:53px;
+     margin:0;
+     padding:20px
+   }
+   #grid{
+     display: grid;
+     grid-template-columns: 100px 1fr;
+   }
+   #grid ol {
+     padding-left:33px;
+   }
+   #grid #article{
+     padding-left: 27px;
+   }
+   @media (max-width:580px) {
+     h1{
+       display: none;
+     }
+   }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html"> <img src="mgt2.jpg" width="15%">  은준이의 이론</a></h1>
+  <a href="index.html"> <img src="mgt2.jpg" width="15%"> <h1> 재활 이론(사이트 제작자의)</a></h1>
+  <div id="grid">
 <ol>
   <li><a href="1.html"> 코로나 </a></li>
   <li><a href="2.html"> <img src="korean.png" width="3%"> 국어 </a></li>
@@ -15,16 +53,17 @@
   <li><a href="6.html"> <img src="life science.png" width="3%"> 생명 </a></li>
   <li><a href="7.html"> <img src="physics.png" width="3%"> 물리 </a></li>
   <li><a href="8.html"> <img src="english.png" width="3%"> 영어 </a></li>
-  <li><a href="9.html"> <img src="pe.png" width="3%"> 체육 </a></li>
+  <li><a href="9.html" style="color:red;text-decoration:underline"  class="saw"> <img src="pe.png" width="3%"> 체육 </a></li>
 </ol>
+<div id="article">
 <h2> 체육 </h2>
-<p>좋은 운동 계획 방법(교과서)를 통해 필요한 운동을 처방해줄 수 있다.
-  <ol>
+<p>좋은 운동 계획 방법(교과서)를 통해 필요한 운동을 처방해줄 수 있다.<p>
     <li> 운동 종류 <p> 유산소/무산소운동 각각 알고 적당히 계획하기
     <li> 운동 빈도 <p> 주3회 이상 이틀 연속 쉬지 않기
     <li> 운동 강도 <p> 너무 힘들지도, 안힘들지도 않고 살짝 숨이 차면서 힘든 정도
     <li> 운동 시간 <p> 최소 10분 이상, 개인의 상태를 고려해서 계획 처음하는경우는 해서
       길게하면 해가 될수 있다.
-
+  </div>
+ </div>
 </body>
 </html>
